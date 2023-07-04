@@ -1,0 +1,13 @@
+<div class="container d-flex flex-row">
+  <app-cocktail-list
+    [cocktails]="cocktails$ | async"
+    class="flex-fill flex-50 pr-10"
+  ></app-cocktail-list>
+  <div class="flex-fill flex-50 pl-10">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <app-cocktail-details
+    [cocktail]="selectedCocktail"
+    
+  ></app-cocktail-details> -->
+</div>
